@@ -1,0 +1,256 @@
+/* 更新前：中央寄せ・最大幅ありのレイアウト */
+body.layout-before {
+  background: #e8e8e8;
+}
+
+body.layout-before .site-wrap {
+  width: min(100%, 720px);
+  margin: 0 auto;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+body.layout-before .site-header {
+  padding: 0 1rem;
+}
+
+body.layout-before .section {
+  padding: 2rem 1.1rem 1.25rem;
+}
+
+body.layout-before .section-title {
+  padding: 0;
+}
+
+body.layout-before .product-row {
+  gap: 0.7rem;
+}
+
+body.layout-before .feature-stack {
+  gap: 1.1rem;
+  padding: 0.5rem 1.1rem 2rem;
+}
+
+body.layout-before .site-footer {
+  padding: 2.2rem 1.2rem 1.4rem;
+}
+
+/* 更新後：ヒーローは全幅、New Arrivals以降は before と同じ幅 */
+body.layout-after .content-narrow {
+  width: min(100%, 720px);
+  margin: 0 auto;
+}
+
+body.layout-after .content-narrow .section {
+  padding: 2rem 1.1rem 1.25rem;
+}
+
+body.layout-after .content-narrow .section-title {
+  padding: 0;
+}
+
+body.layout-after .content-narrow .product-row {
+  gap: 0.7rem;
+}
+
+body.layout-after .content-narrow .feature-stack {
+  gap: 1.1rem;
+  padding: 0.5rem 1.1rem 2rem;
+}
+
+@media (min-width: 760px) {
+  body.layout-before .site-wrap {
+    width: min(100%, 780px);
+  }
+
+  body.layout-after .content-narrow {
+    width: min(100%, 780px);
+  }
+
+  body.layout-before .feature,
+  body.layout-before .feature--reverse,
+  body.layout-before .feature--compact,
+  body.layout-after .content-narrow .feature,
+  body.layout-after .content-narrow .feature--reverse,
+  body.layout-after .content-narrow .feature--compact {
+    min-height: 180px;
+  }
+
+  body.layout-before .feature-media,
+  body.layout-before .feature-media img,
+  body.layout-before .feature--compact .feature-media,
+  body.layout-before .feature--compact .feature-media img,
+  body.layout-after .content-narrow .feature-media,
+  body.layout-after .content-narrow .feature-media img,
+  body.layout-after .content-narrow .feature--compact .feature-media,
+  body.layout-after .content-narrow .feature--compact .feature-media img {
+    min-height: 180px;
+  }
+}
+
+/* 更新後：ヒーローは画面いっぱい */
+body.layout-after .hero {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 40px - 64px);
+  min-height: calc(100dvh - 40px - 64px);
+  padding: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: #fff;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)),
+    url("../images/banner-spring.png") center / cover no-repeat;
+  overflow: hidden;
+}
+
+body.layout-after .hero-kicker,
+body.layout-after .hero-brand {
+  color: #fff;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+}
+
+body.layout-after .hero-brand {
+  font-size: clamp(3rem, 12vw, 5.5rem);
+}
+
+/* new：バージョンバーなし・余白を詰めた本番レイアウト */
+body.layout-new .content-narrow {
+  width: min(100%, 720px);
+  margin: 0 auto;
+}
+
+body.layout-new .content-narrow .section {
+  padding: 1.25rem 1.1rem 0.75rem;
+}
+
+body.layout-new .content-narrow .section-title {
+  margin-bottom: 0.7rem;
+  padding: 0;
+}
+
+body.layout-new .content-narrow .product-row {
+  gap: 0.55rem;
+}
+
+body.layout-new .content-narrow .feature-stack {
+  gap: 0.65rem;
+  padding: 0.35rem 1.1rem 1.25rem;
+}
+
+body.layout-new .content-narrow .feature,
+body.layout-new .content-narrow .feature--reverse,
+body.layout-new .content-narrow .feature--compact {
+  min-height: 120px;
+}
+
+body.layout-new .content-narrow .feature-media,
+body.layout-new .content-narrow .feature-media img,
+body.layout-new .content-narrow .feature--compact .feature-media,
+body.layout-new .content-narrow .feature--compact .feature-media img {
+  min-height: 120px;
+}
+
+body.layout-new .content-narrow .feature-copy {
+  padding: 0.75rem 0.8rem;
+}
+
+body.layout-new .hero {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  min-height: calc(100dvh - 64px);
+  padding: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: #fff;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)),
+    url("../images/banner-spring.png") center / cover no-repeat;
+  overflow: hidden;
+}
+
+body.layout-new .hero-kicker,
+body.layout-new .hero-brand {
+  color: #fff;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+}
+
+body.layout-new .hero-brand {
+  font-size: clamp(3rem, 12vw, 5.5rem);
+}
+
+body.layout-new .site-header {
+  top: 0;
+}
+
+body.layout-new .nav-drawer,
+body.layout-new .nav-overlay {
+  top: 64px;
+}
+
+body.layout-new .site-footer {
+  padding: 1.6rem 0.75rem 1.1rem;
+}
+
+@media (min-width: 760px) {
+  body.layout-new .content-narrow {
+    width: min(100%, 780px);
+  }
+
+  body.layout-new .content-narrow .feature,
+  body.layout-new .content-narrow .feature--reverse,
+  body.layout-new .content-narrow .feature--compact {
+    min-height: 160px;
+  }
+
+  body.layout-new .content-narrow .feature-media,
+  body.layout-new .content-narrow .feature-media img,
+  body.layout-new .content-narrow .feature--compact .feature-media,
+  body.layout-new .content-narrow .feature--compact .feature-media img {
+    min-height: 160px;
+  }
+}
+
+.version-bar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 0.55rem 0.75rem;
+  background: #111;
+  color: #fff;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.version-bar a {
+  color: #fff;
+  opacity: 0.7;
+  border-bottom: 1px solid transparent;
+}
+
+.version-bar a:hover,
+.version-bar a.is-current {
+  opacity: 1;
+  border-bottom-color: #fff;
+}
+
+body.layout-before .site-header {
+  top: 40px;
+}
+
+body.layout-after .site-header {
+  top: 40px;
+}
+
+body.layout-before .nav-drawer,
+body.layout-after .nav-drawer,
+body.layout-before .nav-overlay,
+body.layout-after .nav-overlay {
+  top: calc(40px + 64px);
+}

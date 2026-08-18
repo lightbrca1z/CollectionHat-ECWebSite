@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cart | Collection Hat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="site-wrap">
+      <header class="site-header">
+        <div class="header-spacer" aria-hidden="true"></div>
+        <a class="logo" href="collectionHatTop.html">Collection Hat</a>
+        <button
+          class="menu-btn"
+          type="button"
+          aria-label="メニュー"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </header>
+
+      <div class="nav-overlay"></div>
+      <aside class="nav-drawer" aria-label="サイトメニュー">
+        <nav>
+          <a href="collectionHatTop.html">Home</a>
+          <a href="company.html">Company</a>
+          <a href="selectProduct.html">Product</a>
+          <a href="qa.html">Q&amp;A</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Cart</a>
+        </nav>
+      </aside>
+
+      <main>
+        <h1 class="page-title">Cart</h1>
+
+        <p class="cart-empty" id="cart-empty">カートに商品がありません。</p>
+        <div class="cart-list" id="cart-list"></div>
+
+        <div class="cart-summary" id="cart-summary" hidden>
+          <div class="cart-total">
+            <span>合計</span>
+            <span id="cart-total">¥0</span>
+          </div>
+          <button type="button" class="btn btn-primary" id="btn-checkout">
+            レジに進む
+          </button>
+          <a class="btn btn-ghost" href="selectProduct.html">お買い物を続ける</a>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-logo-mark">
+          <img src="images/logo-hat.svg" alt="" width="42" height="28" />
+        </div>
+        <p class="footer-brand">Collection Hat</p>
+        <nav class="footer-nav" aria-label="フッターナビ">
+          <a href="collectionHatTop.html">Home</a><span>|</span>
+          <a href="company.html">Company</a><span>|</span>
+          <a href="selectProduct.html">Product</a><span>|</span>
+          <a href="qa.html">Q&amp;A</a><span>|</span>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <p class="footer-copy">© 2017 Collection Hat</p>
+      </footer>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Detail | Collection Hat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="site-wrap">
+      <header class="site-header">
+        <div class="header-spacer" aria-hidden="true"></div>
+        <a class="logo" href="collectionHatTop.html">Collection Hat</a>
+        <button
+          class="menu-btn"
+          type="button"
+          aria-label="メニュー"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </header>
+
+      <div class="nav-overlay"></div>
+      <aside class="nav-drawer" aria-label="サイトメニュー">
+        <nav>
+          <a href="collectionHatTop.html">Home</a>
+          <a href="company.html">Company</a>
+          <a href="selectProduct.html">Product</a>
+          <a href="qa.html">Q&amp;A</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Cart</a>
+        </nav>
+      </aside>
+
+      <main>
+        <a class="crumb" href="selectProduct.html">Products</a>
+
+        <section class="gallery">
+          <img
+            id="gallery-main"
+            class="gallery-main"
+            src="images/hat-black-1.png"
+            alt="フェルトハット"
+          />
+          <div class="thumbs" role="list">
+            <button type="button" class="is-active" data-src="images/hat-black-1.png">
+              <img src="images/hat-black-1.png" alt="" />
+            </button>
+            <button type="button" data-src="images/hat-grey-1.png">
+              <img src="images/hat-grey-1.png" alt="" />
+            </button>
+            <button type="button" data-src="images/hat-navy-1.png">
+              <img src="images/hat-navy-1.png" alt="" />
+            </button>
+            <button type="button" data-src="images/hat-beige-1.png">
+              <img src="images/hat-beige-1.png" alt="" />
+            </button>
+          </div>
+        </section>
+
+        <section class="buy-panel">
+          <div class="buy-head">
+            <h1 id="product-name">フェルトハット</h1>
+            <p class="price" id="product-price">¥19,000</p>
+          </div>
+
+          <label class="field" for="size">
+            <span>サイズ</span>
+            <select id="size">
+              <option value="S">S(Small)</option>
+              <option value="M">M(Medium)</option>
+              <option value="L" selected>L(Large)</option>
+              <option value="XL">XL(X-Large)</option>
+            </select>
+          </label>
+
+          <div class="field">
+            <span>カラー</span>
+            <div class="swatches" role="listbox" aria-label="カラー">
+              <button
+                type="button"
+                class="swatch"
+                style="background: #f5f5f5"
+                data-color="ホワイト"
+                aria-label="ホワイト"
+              ></button>
+              <button
+                type="button"
+                class="swatch is-active"
+                style="background: #111"
+                data-color="ブラック"
+                aria-label="ブラック"
+              ></button>
+              <button
+                type="button"
+                class="swatch"
+                style="background: #6ea8e8"
+                data-color="ブルー"
+                aria-label="ブルー"
+              ></button>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="btn-add-cart"
+            data-product-id="felt-black"
+          >
+            カートへ
+          </button>
+        </section>
+
+        <section class="content-block">
+          <h2>商品説明</h2>
+          <p>
+            今流行のフェルトハットです。生地が柔らかく、被り心地もいいです。デザインもかっこよく、お客様を満足させること間違いなしです。
+          </p>
+        </section>
+
+        <section class="content-block">
+          <h2>商品レビュー</h2>
+          <div class="reviews">
+            <article class="review">
+              <div class="avatar" aria-hidden="true"></div>
+              <div>
+                <strong>ユーザー1</strong>
+                <p>デザインに大満足です。</p>
+              </div>
+            </article>
+            <article class="review">
+              <div class="avatar" aria-hidden="true"></div>
+              <div>
+                <strong>ユーザー2</strong>
+                <p>他のカラーも欲しいです。</p>
+              </div>
+            </article>
+            <article class="review">
+              <div class="avatar" aria-hidden="true"></div>
+              <div>
+                <strong>ユーザー3</strong>
+                <p>Excellent!</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="related">
+          <h2 class="section-title">関連商品</h2>
+          <div class="related-track-wrap">
+            <button type="button" class="carousel-btn prev" aria-label="前へ">
+              &lt;
+            </button>
+            <div class="related-track">
+              <article class="product-card">
+                <a href="productDetail.html?id=felt-black">
+                  <img src="images/hat-black-1.png" alt="関連商品" />
+                </a>
+              </article>
+              <article class="product-card">
+                <a href="productDetail.html?id=felt-grey">
+                  <img src="images/hat-grey-1.png" alt="関連商品" />
+                </a>
+              </article>
+              <article class="product-card">
+                <a href="productDetail.html?id=felt-navy">
+                  <img src="images/hat-navy-1.png" alt="関連商品" />
+                </a>
+              </article>
+              <article class="product-card">
+                <a href="productDetail.html?id=felt-beige">
+                  <img src="images/hat-beige-1.png" alt="関連商品" />
+                </a>
+              </article>
+              <article class="product-card">
+                <a href="productDetail.html?id=felt-black">
+                  <img src="images/hat-black-1.png" alt="関連商品" />
+                </a>
+              </article>
+            </div>
+            <button type="button" class="carousel-btn next" aria-label="次へ">
+              &gt;
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-logo-mark">
+          <img src="images/logo-hat.svg" alt="" width="42" height="28" />
+        </div>
+        <p class="footer-brand">Collection Hat</p>
+        <nav class="footer-nav" aria-label="フッターナビ">
+          <a href="collectionHatTop.html">Home</a><span>|</span>
+          <a href="company.html">Company</a><span>|</span>
+          <a href="selectProduct.html">Product</a><span>|</span>
+          <a href="qa.html">Q&amp;A</a><span>|</span>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <p class="footer-copy">© 2017 Collection Hat</p>
+      </footer>
+    </div>
+    <script src="js/app.js"></script>
+    <script>
+      (function () {
+        const params = new URLSearchParams(location.search);
+        const id = params.get("id") || "felt-black";
+        const product = PRODUCTS[id] || PRODUCTS["felt-black"];
+        const main = document.getElementById("gallery-main");
+        const nameEl = document.getElementById("product-name");
+        const priceEl = document.getElementById("product-price");
+        const addBtn = document.getElementById("btn-add-cart");
+        const thumbs = document.querySelector(".thumbs");
+
+        nameEl.textContent = product.name;
+        priceEl.textContent = formatPrice(product.price);
+        main.src = product.image;
+        addBtn.dataset.productId = product.id;
+
+        thumbs.innerHTML = product.images
+          .map(
+            (src, i) => `
+            <button type="button" class="${i === 0 ? "is-active" : ""}" data-src="${src}">
+              <img src="${src}" alt="" />
+            </button>
+          `
+          )
+          .join("");
+      })();
+    </script>
+  </body>
+</html>
