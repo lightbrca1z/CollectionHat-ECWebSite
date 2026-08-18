@@ -2,11 +2,124 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=collectionHatTop.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Collection Hat</title>
-    <link rel="canonical" href="collectionHatTop.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/top-versions.css" />
   </head>
-  <body>
-    <p><a href="collectionHatTop.html">Collection Hat</a></p>
+  <body class="layout-new">
+    <div class="site-wrap">
+      <header class="site-header">
+        <div class="header-spacer" aria-hidden="true"></div>
+        <a class="logo" href="index.html">Collection Hat</a>
+        <button
+          class="menu-btn"
+          type="button"
+          aria-label="メニュー"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </header>
+
+      <div class="nav-overlay"></div>
+      <aside class="nav-drawer" aria-label="サイトメニュー">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="company.html">Company</a>
+          <a href="selectProduct.html">Product</a>
+          <a href="qa.html">Q&amp;A</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Cart</a>
+        </nav>
+      </aside>
+
+      <main>
+        <section class="hero">
+          <p class="hero-kicker">Dress up with your Hat</p>
+          <p class="hero-brand">Collection Hat</p>
+        </section>
+
+        <div class="content-narrow">
+          <section class="section">
+            <h2 class="section-title">New Arrivals</h2>
+            <div class="product-row">
+              <article class="product-card">
+                <a href="productDetail.html?id=felt-black">
+                  <img src="images/hat-black-1.png" alt="フェルトハット" />
+                  <span class="name">フェルトハット</span>
+                  <span class="price">¥15,000</span>
+                </a>
+              </article>
+              <article class="product-card">
+                <a href="productDetail.html?id=felt-grey">
+                  <img src="images/hat-grey-1.png" alt="フェルトハット" />
+                  <span class="name">フェルトハット</span>
+                  <span class="price">¥15,000</span>
+                </a>
+              </article>
+              <article class="product-card">
+                <a href="productDetail.html?id=felt-navy">
+                  <img src="images/hat-navy-1.png" alt="フェルトハット" />
+                  <span class="name">フェルトハット</span>
+                  <span class="price">¥15,000</span>
+                </a>
+              </article>
+            </div>
+          </section>
+
+          <div class="feature-stack">
+            <article class="feature">
+              <div class="feature-copy">
+                <p>2018 Spring<br />FeltHat Collection</p>
+              </div>
+              <div class="feature-media">
+                <img src="images/banner-spring.png" alt="2018 Spring FeltHat Collection" />
+              </div>
+            </article>
+
+            <article class="feature feature--reverse">
+              <div class="feature-copy">
+                <p>FeltHat Sale<br />50%!</p>
+              </div>
+              <div class="feature-media">
+                <img src="images/banner-sale.png" alt="FeltHat Sale 50%" />
+              </div>
+            </article>
+
+            <article class="feature feature--compact">
+              <div class="feature-copy">
+                <p>FeltHat Best Collection<br />2017-2018</p>
+              </div>
+              <div class="feature-media">
+                <img src="images/hat-grey-1.png" alt="Best Collection hat" />
+              </div>
+            </article>
+          </div>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-logo-mark">
+          <img src="images/logo-hat.svg" alt="" width="42" height="28" />
+        </div>
+        <p class="footer-brand">Collection Hat</p>
+        <nav class="footer-nav" aria-label="フッターナビ">
+          <a href="index.html">Home</a><span>|</span>
+          <a href="company.html">Company</a><span>|</span>
+          <a href="selectProduct.html">Product</a><span>|</span>
+          <a href="qa.html">Q&amp;A</a><span>|</span>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <p class="footer-copy">© 2017 Collection Hat</p>
+      </footer>
+    </div>
+    <script src="js/app.js"></script>
   </body>
 </html>
